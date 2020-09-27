@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.nazhimkalam.demo2;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
     @RequestMapping("/")
-    public String home(){
+    public String home()
+    {
         return "index.jsp";
     }
 
