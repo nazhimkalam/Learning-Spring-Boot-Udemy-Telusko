@@ -27,6 +27,7 @@ public class HomeController {
     @PostMapping("addAlien")
     public String add(@ModelAttribute("a1")Alien a)
     {
+        repo.save(a);
         return "result";
     }
 
@@ -34,6 +35,13 @@ public class HomeController {
     public String getAliens(Model m)
     {
         m.addAttribute("result", repo.findAll());
+        return "showAliens";
+    }
+
+    @GetMapping("getAlien")
+    public String getAlien(@RequestParam int aid, Model m)
+    {
+        m.addAttribute("result", repo.getOne(aid));
         return "showAliens";
     }
 
