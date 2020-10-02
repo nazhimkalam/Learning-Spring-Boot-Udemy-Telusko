@@ -21,5 +21,10 @@
         Enter your id : <input type="text" name="aid"><br>
         <input type="submit">
     </form>
+    <hr>
+    <form action="getAlienByName" method="get">
+        Enter your Name : <input type="text" name="aname"><br>
+        <input type="submit">
+    </form>
 </body>
 </html>

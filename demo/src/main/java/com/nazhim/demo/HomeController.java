@@ -38,10 +38,18 @@ public class HomeController {
         return "showAliens";
     }
 
-    @GetMapping("getAlien")
+    @GetMapping("getAlien") // getAlien by ID
     public String getAlien(@RequestParam int aid, Model m)
     {
         m.addAttribute("result", repo.getOne(aid));
+        return "showAliens";
+    }
+
+
+    @GetMapping("getAlienByName") // getAlien by Aname
+    public String getAlien(@RequestParam String aname, Model m)
+    {
+        m.addAttribute("result", repo.findByAname(aname));
         return "showAliens";
     }
 
