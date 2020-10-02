@@ -4,6 +4,7 @@ import com.nazhim.demo.model.Alien;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -28,6 +29,13 @@ public class AlienController {
         // if alien not present then we send a new alien with values 0 and empty string.
         Alien alien = repo.findById(aid).orElse(new Alien(0, ""));
 
+        return alien;
+    }
+
+    @PostMapping("alien")
+    public Alien addAlien(Alien alien)
+    {
+        repo.save(alien);
         return alien;
     }
 }
