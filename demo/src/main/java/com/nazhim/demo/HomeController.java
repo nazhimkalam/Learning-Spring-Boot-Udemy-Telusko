@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import java.util.Arrays;
+import java.util.List;
 
 @Controller
 public class HomeController {
@@ -26,6 +28,14 @@ public class HomeController {
     public String add(@ModelAttribute("a1")Alien a)
     {
         return "result";
+    }
+
+    @GetMapping("getAliens")
+    public String getAliens(Model m)
+    {
+        List<Alien> aliens = Arrays.asList(new Alien(101, "Navin"), new Alien(102, "Rose"));
+        m.addAttribute("result", aliens);
+        return "showAliens";
     }
 
 
