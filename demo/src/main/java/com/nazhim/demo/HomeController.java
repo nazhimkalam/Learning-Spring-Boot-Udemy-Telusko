@@ -13,6 +13,12 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class HomeController {
 
+    // All the ModelAttributes will be called first before calling the RequestMapping deco
+    @ModelAttribute
+    public void modelData(Model m){
+        m.addAttribute("name", "Aliens");
+    }
+
     @RequestMapping("/")
     public String home(){
         return "index";
@@ -23,5 +29,7 @@ public class HomeController {
     {
         return "result";
     }
+
+
 
 }
