@@ -11,9 +11,9 @@
 <body>
     Welcome to Telusko
 
-    <form action="add">
-        Enter 1st number : <input type="text" name="num1"><br>
-        Enter 2nd number : <input type="text" name="num2"><br>
+    <form action="addAlien">
+        Enter ID : <input type="text" name="aid"><br>
+        Enter name : <input type="text" name="aName"><br>
         <input type="submit">
     </form>
 </body>

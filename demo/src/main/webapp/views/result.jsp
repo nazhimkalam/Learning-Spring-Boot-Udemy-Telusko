@@ -8,6 +8,6 @@
     </head>
 
     <body>
-        Result is : ${num3}
+        Result is : ${a1}
     </body>
 </html>
