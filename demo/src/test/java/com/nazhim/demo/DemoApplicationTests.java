@@ -1,10 +1,10 @@
-package com.nazhimkalam.demo2;
+package com.nazhim.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Demo2ApplicationTests {
+class DemoApplicationTests {
 
     @Test
     void contextLoads() {
