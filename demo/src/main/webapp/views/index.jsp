@@ -11,7 +11,7 @@
 <body>
     Welcome to Telusko
 
-    <form action="addAlien">
+    <form action="addAlien" method="post">
         Enter ID : <input type="text" name="aid"><br>
         Enter name : <input type="text" name="aName"><br>
         <input type="submit">
