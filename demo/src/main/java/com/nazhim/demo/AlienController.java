@@ -16,7 +16,6 @@ public class AlienController {
     public List<Alien> getAliens()
     {
         List<Alien> aliens = repo.findAll();
-
         return aliens;
     }
 
@@ -25,7 +24,6 @@ public class AlienController {
     {
         // if alien not present then we send a new alien with values 0 and empty string.
         Alien alien = repo.findById(aid).orElse(new Alien(0, ""));
-
         return alien;
     }
 
