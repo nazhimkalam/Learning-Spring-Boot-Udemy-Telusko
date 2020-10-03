@@ -1,0 +1,29 @@
+2020-10-03 11:20:43.199  INFO 9256 --- [main] com.nazhim.demo.DemoApplication          : Starting DemoApplication on Nazhim-HP-ProBook with PID 9256 (C:\Users\Nazhim\Desktop\Learning-Spring-Boot-Udemy-Telusko\demo\target\classes started by Nazhim in C:\Users\Nazhim\Desktop\Learning-Spring-Boot-Udemy-Telusko\demo)
+2020-10-03 11:20:43.203  INFO 9256 --- [main] com.nazhim.demo.DemoApplication          : No active profile set, falling back to default profiles: default
+2020-10-03 11:20:44.199  INFO 9256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-03 11:20:44.308  INFO 9256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 1 JPA repository interfaces.
+2020-10-03 11:20:44.884  INFO 9256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2020-10-03 11:20:44.890  INFO 9256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-03 11:20:44.890  INFO 9256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-03 11:20:45.125  INFO 9256 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-03 11:20:45.127  INFO 9256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-03 11:20:45.128  INFO 9256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1844 ms
+2020-10-03 11:20:45.264  INFO 9256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-03 11:20:45.272  INFO 9256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-03 11:20:45.386  INFO 9256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-03 11:20:45.423  INFO 9256 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-03 11:20:45.518  INFO 9256 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-03 11:20:45.532  WARN 9256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-03 11:20:45.656  INFO 9256 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-03 11:20:45.719  INFO 9256 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-03 11:20:45.759  INFO 9256 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-03 11:20:45.875  INFO 9256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2020-10-03 11:20:45.877  INFO 9256 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-03 11:20:46.235  INFO 9256 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-03 11:20:46.244  INFO 9256 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-03 11:20:46.436  INFO 9256 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-03 11:20:46.445  INFO 9256 --- [main] com.nazhim.demo.DemoApplication          : Started DemoApplication in 3.603 seconds (JVM running for 4.446)
+2020-10-03 11:21:07.731  INFO 9256 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-03 11:21:07.732  INFO 9256 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-03 11:21:07.738  INFO 9256 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-10-03 11:21:07.756  INFO 9256 --- [http-nio-8000-exec-1] com.nazhim.demo.LoggingAspect            : getAliens method called from aspect...
