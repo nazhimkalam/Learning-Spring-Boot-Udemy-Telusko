@@ -1,8 +1,6 @@
 package com.nazhim.demo;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -20,10 +18,18 @@ public class LoggingAspect
     }
 
     // By default the @After annotation will be called even after exceptions occurs.(just like finally in exception handling)
-    @After("execution(public * com.nazhim.demo.AlienController.getAliens())")
+    // Using the @AfterReturning annotation we only fire this log when the execution is successfully completed.
+    @AfterReturning("execution(public * com.nazhim.demo.AlienController.getAliens())")
     public void logAfter()
     {
         LOGGER.info("getAliens method has Executed...");
+    }
+
+    // This fires when there is an error occurred during the execution of the getAliens() method
+    @AfterThrowing("execution(public * com.nazhim.demo.AlienController.getAliens())")
+    public void logException()
+    {
+        LOGGER.info("Issue occurred...");
     }
 }
 
