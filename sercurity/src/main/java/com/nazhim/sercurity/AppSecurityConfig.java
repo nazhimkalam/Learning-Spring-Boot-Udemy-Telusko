@@ -19,7 +19,6 @@ import java.util.List;
 @Configuration
 @EnableWebSecurity
 public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
-
     // Spring @Bean annotation tells that a method produces a bean to be managed by the Spring container.
     // A bean is simply one of many objects in your application, when u create objects Spring handles these as beans.
 
@@ -48,10 +47,5 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
         return provider;
     }
 
+
 }
-
-
-
-
-
-

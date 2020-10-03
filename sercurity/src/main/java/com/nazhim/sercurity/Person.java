@@ -1,5 +1,6 @@
 package com.nazhim.sercurity;
 
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
