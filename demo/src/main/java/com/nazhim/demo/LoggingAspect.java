@@ -19,7 +19,7 @@ public class LoggingAspect
         LOGGER.info("getAliens method called from aspect...");
     }
 
-    // By default the @After annotation will be called even after exceptions occurs.
+    // By default the @After annotation will be called even after exceptions occurs.(just like finally in exception handling)
     @After("execution(public * com.nazhim.demo.AlienController.getAliens())")
     public void logAfter()
     {
